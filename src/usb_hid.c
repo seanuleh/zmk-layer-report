@@ -17,7 +17,7 @@ static const struct hid_ops ops = {
 };
 
 static int layer_report_usb_init(void) {
-    hid_dev = device_get_binding("HID_LAYER_REPORT");
+    hid_dev = device_get_binding("HID_1");
     if (hid_dev == NULL) {
         LOG_ERR("cannot get HID device binding");
         return -ENODEV;
